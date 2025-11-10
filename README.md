@@ -1,7 +1,11 @@
 # Telecom Churn Prediction (DL_2025_Group_35)
 
 ## Overview
-Predict customer churn for a telecom dataset. The project explores multiple modeling approaches, data drift monitoring, and an inference pipeline, all orchestrated in `churn_modeling.ipynb`.
+Predict customer churn for a telecom dataset. The project explores multiple modeling approaches, data drift monitoring, and an inference pipeline, all orchestrated in `main.ipynb`.
+
+Colab Link : https://colab.research.google.com/github/TheJojoJoseph/DL_2025_Group_35/blob/main/main.ipynb#scrollTo=dfgRwRObhOW5
+
+Github: github/TheJojoJoseph/DL_2025_Group_35
 
 ## Executive Summary
 This project successfully developed, trained, and compared deep learning models (ANN and 1D CNN) to predict customer churn in the telecom sector using US telecom data (653,753 rows × 74 columns). The goal was to identify customers likely to discontinue service to enable targeted retention campaigns. Despite a severe class imbalance (4.57% churn rate), the Artificial Neural Network (ANN) achieved the best overall performance, with 95.9% accuracy and a Recall of 0.1441, indicating superior ability to detect actual churners compared to the CNN. Key business insights highlight high ARPU customers and specific data usage patterns as major churn risk factors.
@@ -80,3 +84,18 @@ pip install pandas numpy scikit-learn xgboost tensorflow deepchecks jupyter
 - The notebook auto-selects a local CSV if present, else pulls from the public S3 link.
 - Large data can slow training; the added HistGB approach includes an optional downsample for quicker iteration.
 
+## Requirement
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+torch
+tqdm
+h5py
+Pillow
+kagglehub
+ultralytics
+wandb
+pytorch-tabnet
